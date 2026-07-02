@@ -1,0 +1,22 @@
+{
+  "name": "intern-project",
+  "version": "1.0.0",
+  "description": "Full Stack Web Development internship — Foundation, Database, & Backend API track.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ritaghosnn/intern-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ritaghosnn/intern-project/issues"
+  },
+  "homepage": "https://github.com/ritaghosnn/intern-project#readme"
+}

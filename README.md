@@ -10,5 +10,5 @@ Full Stack Web Development internship — Foundation, Database, & Backend API tr
 ## How to start
 ```bash
 npm install
-npm run dev
+npm start
 ```
