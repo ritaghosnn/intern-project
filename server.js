@@ -2,11 +2,14 @@ import express from 'express';
 import pool from './db.js';
 import projectsRouter from './routes/projects.js';
 import tasksRouter from './routes/tasks.js';
+import authRouter from './routes/auth.js';
+import authenticateToken from './middleware/auth.js';
 
 const app = express();
 app.use(express.json());
-app.use('/projects', projectsRouter);
-app.use('/tasks', tasksRouter);
+app.use('/projects',authenticateToken, projectsRouter);
+app.use('/tasks', authenticateToken, tasksRouter);
+app.use('/auth', authRouter);
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
