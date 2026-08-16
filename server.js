@@ -4,8 +4,10 @@ import projectsRouter from './routes/projects.js';
 import tasksRouter from './routes/tasks.js';
 import authRouter from './routes/auth.js';
 import authenticateToken from './middleware/auth.js';
+import cors from 'cors';
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 app.use('/projects',authenticateToken, projectsRouter);
 app.use('/tasks', authenticateToken, tasksRouter);
